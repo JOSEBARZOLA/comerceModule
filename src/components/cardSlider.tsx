@@ -13,7 +13,7 @@ function CardSlider() {
       <section className="section">
 
         <div className="card-wrapper">
-          <Swiper
+          <Swiper className='swiper-wraper'
             modules={[Navigation]}
             spaceBetween={10}
             navigation={{
@@ -23,8 +23,10 @@ function CardSlider() {
             loop={true}
             breakpoints={{
               0: { slidesPerView: 1 },
-              768: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 },
+              420: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              1024: { slidesPerView: 5 },
+              1440: { slidesPerView: 6 },
             }}
           >
             {/* Renderizamos múltiples Card con SwiperSlide */}

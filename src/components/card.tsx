@@ -2,7 +2,7 @@ import '../assets/sass/_card.scss';
 
 function Card() {
   return (
-    <div className="card">
+    <div className="card card--small">
       <div className="badge">HOT SALE</div>
       <div className="tilt">
         <div className="img">

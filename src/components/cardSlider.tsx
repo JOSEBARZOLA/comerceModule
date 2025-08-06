@@ -1,6 +1,7 @@
 import '../assets/sass/_cardSlider.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 
 
@@ -15,7 +16,7 @@ function CardSlider() {
         <div className="card-wrapper">
           <Swiper className='swiper-wraper'
             modules={[Navigation]}
-            spaceBetween={10}
+            spaceBetween={1}
             navigation={{
               nextEl: '.swiper-button-next',
               prevEl: '.swiper-button-prev',
@@ -35,8 +36,8 @@ function CardSlider() {
                 <Card />
               </SwiperSlide>
             ))}
-            <div className="swiper-slide-button swiper-button-prev"></div>
-            <div className="swiper-slide-button swiper-button-next"></div>
+            <BsArrowLeftCircleFill className="swiper-button-prev" size={40} />
+            <BsArrowRightCircleFill className="swiper-button-next" size={40} />
           </Swiper>
         </div>  
       </section>

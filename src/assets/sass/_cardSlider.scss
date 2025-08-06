@@ -13,15 +13,11 @@ background-color: rgb(255, 255, 255);
   .swiper-slide{
     margin: 0px 0px; //este tiene las card
   }
-  .swiper-slide-button {
-    color: #fe2a2a;
-    margin-top: -30px;
-  }
+  
 
   @media (max-width: 768px) {
     
-
-    .swiper-slide-button {
+    .swiper-button-prev, .swiper-button-next {
       display: none;
     }
   }
